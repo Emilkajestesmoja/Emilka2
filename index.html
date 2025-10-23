@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Mini gra — przejdź 6 tub</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#000000" />
+</head>
+<body>
+  <main class="layout">
+    <header class="intro">
+      <div class="intro-inner">
+        <h1>W tej grze musisz przejść przez 6 tub, aby przejść dalej.</h1>
+        <p>Używaj Spacji. Powodzenia!</p>
+      </div>
+    </header>
+
+    <section class="game-section">
+      <div class="game-root" id="root" aria-label="Bird Jumper">
+        <canvas id="game" aria-hidden="true"></canvas>
+
+        <div id="hud" aria-live="polite">
+          <div class="score" id="score">0</div>
+        </div>
+
+        <div class="overlay show" id="ui">
+          <div class="panel">
+            <h2>Bird Jumper</h2>
+            <p>Kliknij / stuknij lub naciśnij Spację, aby skakać.</p>
+            <p class="hint">Przejdź przez 6 przeszkód, aby wygrać.</p>
+            <div class="buttons">
+              <button id="playButton" class="primary">Start</button>
+            </div>
+            <div class="keys">
+              <span>Spacja — skok</span>
+              <span>R — restart</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="toasts" id="toasts" aria-live="assertive"></div>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
