@@ -394,7 +394,8 @@
       beep('win', 0.06);
       for (let i=0;i<120;i++) confetti.push(new Confetti(bird.x, bird.y));
       setTimeout(() => {
-        window.location.href = 'https://emilkajestesmoja.github.io/Emilka2/';
+        // ### ZMIANA TUTAJ ###
+        window.location.href = 'https://emilkajestesmoja.github.io/Emilka3/';
       }, 1400); // delikatna pauza, potem przekierowanie
     } else {
       // Ekran porażki
